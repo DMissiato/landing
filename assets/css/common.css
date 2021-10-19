@@ -1,0 +1,303 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5em;
+}
+
+img
+{
+    display: block;
+}
+
+a
+{
+    color: #000000;
+}
+
+
+/* Header */
+header
+{
+    background-color: #f2f2f2;
+    border-bottom: #c9bec3 10px solid;
+    padding: 15px 0;
+}
+
+header img
+{
+    margin: 0 auto;
+}
+
+/* Hero */
+#hero img
+{
+    width: 100%;
+    height: auto;
+}
+
+/* Testo */
+.text
+{
+    max-width: 990px;
+    color: #4e3939;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 50px;
+    line-height: 30px;
+}
+
+.text h1
+{
+    color: #ee7560;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 25px;
+    line-height: 65px;
+}
+
+.button
+{
+    background-color: #ee7560;
+    border: 2px #ee7560 solid;
+    color: #ffffff;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s cubic-bezier(0.02, 0.99, 0.91, 1.58);
+}
+
+.button:hover
+{
+    background-color: #fff;
+    color: #ee7560;
+}
+
+/* Vantaggi */
+#benefits
+{
+    padding: 100px 50px;
+    background-color: #f8f3f0;
+}
+
+#benefits .flex-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#benefits .flex-container .flex-item
+{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: #4e3939;
+}
+
+#benefits .flex-container .flex-item h2
+{
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    line-height: 60px;
+}
+
+#benefits .flex-container .flex-item p
+{
+    font-size: 0.8em;
+    padding: 10px 0;
+}
+
+/* Form */
+#form
+{
+    width: 100%;
+    max-width: 990px;
+    padding: 100px 50px;
+    margin: 0 auto;
+}
+
+#form h2
+{
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    line-height: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#form #contactForm .flex-form
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form #contactForm .flex-form .inputDiv
+{
+    width: 33%;
+    padding: 20px;
+}
+
+#form #contactForm .flex-form .inputDiv.maxWidth
+{
+    width: 100%;
+}
+
+#form #contactForm .flex-form .inputDiv .privacyText
+{
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#form #contactForm .flex-form .inputDiv label
+{
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+#form #contactForm .flex-form .inputDiv .inputText
+{
+    display: block;
+    min-height: 50px;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 0.8em;
+    background-color: #efefef;
+}
+
+#form #contactForm .flex-form .inputDiv textarea#contactText
+{
+    min-height: 100px;
+    max-height: 200px;
+    resize: vertical;
+    padding: 10px 15px;
+}
+
+#form #contactForm .flex-form .inputDiv input[type="submit"]
+{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer
+{
+    background-color: #333333;
+    border-top: #4e3939 8px solid;
+    padding: 100px 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+footer a
+{
+    color: #ffffff;
+}
+
+footer a:hover
+{
+    text-decoration: none;
+}
+
+/* // // Mobile // // */
+@media all and (max-width: 990px)
+{
+
+    header img
+    {
+        height: auto;
+        width: 100px;
+    }
+
+    .text
+    {
+        padding: 50px 5%;
+        font-size: 0.7em;
+    }
+
+    .text h1
+    {
+        font-size: 1.7em;
+    }
+
+    .button
+    {
+        margin-top: 40px;
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    #benefits
+    {
+        padding: 50px 5%;
+    }
+
+    #benefits .flex-container .flex-item
+    {
+        width: 100%;
+        padding: 50px 5%;
+    }
+
+    #benefits .flex-container .flex-item h2
+    {
+        font-size: 1.1em;
+        line-height: 35px;
+    }
+
+    #benefits .flex-container .flex-item p
+    {
+        font-size: 0.7em;
+    }
+
+    #form
+    {
+        padding: 50px 5%;
+        font-size: 0.9em;
+    }
+
+    #form h2
+    {
+        font-size: 1.5em;
+    }
+
+    #form #contactForm .flex-form .inputDiv
+    {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    #form #contactForm .flex-form .inputDiv input[type="submit"]
+    {
+        font-size: 0.9em;
+    }
+
+    footer
+    {
+        padding: 80px 10%;
+        font-size: 0.6em;
+    }
+
+}

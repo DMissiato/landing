@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page</title>
+        <meta name="description" content="Torte e dolci per i più golosi. Benvenuti su Bakery.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=”robots” content="index, follow">
+        <meta name="keywords" content="Torte, dolci, muffin, Bakery">
+        <meta name="author" content="Davide Missiato">
+        
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Css -->
+        <link href="assets/css/normalize.css" rel="stylesheet">
+        <link href="assets/css/common.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="assets/img/logo.png" width="150" height="150" alt="Logo Bakery">
+        </header>
+
+        <!-- Hero -->
+        <div id="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/img/top-m.jpg">
+                <img src="assets/img/top-d.jpg" width="1920" height="750" alt="Tortini">
+            </picture>
+        </div>
+
+        <!-- Testo -->
+        <div class="text">
+            <h1>Benvenuti su Bakery</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid doloribus voluptate dolorum reprehenderit harum quisquam tempora. Quidem cum, laboriosam laudantium dolores molestiae deleniti corporis, amet eos, consectetur dolor itaque.
+            </p>
+            <a href="#form" class="button">Contattaci</a>
+        </div>
+
+        <!-- Vantaggi -->
+        <div id="benefits">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>Vantaggio 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit non facere at saepe ex dolores!
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <h2>Vantaggio 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit non facere at quibusdam saepe ex dolores sit amet ipsum dolor...
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <h2>Vantaggio 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odit non facere at quibusdam saepe ex dolores sit!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form di Contatto -->
+        <div id="form">
+            <h2>Contattaci</h2>
+            <form id="contactForm" name="contactForm" action="#" method="post">
+                <div class="flex-form">
+                    <div class="inputDiv">
+                        <label for="department">Reparto *</label>
+                        <select name="department" id="department" class="inputText" required>
+                            <option value="" disabled>Seleziona il reparto</option>
+                            <option value="production">Produzione</option>
+                            <option value="billing">Fatturazione</option>
+                            <option value="assistance">Assistenza Generica</option>
+                        </select>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="name">Nome e Cognome *</label>
+                        <input type="text" class="inputText" name="name" id="name" placeholder="Scrivi qui il tuo nome e cognome" required>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="email">Email *</label>
+                        <input type="email" class="inputText" name="email" id="email" placeholder="Scrivi qui la tua email" required>
+                    </div>
+                    <div class="inputDiv maxWidth">
+                        <label for="name">Messaggio</label>
+                        <textarea name="text" class="inputText" id="contactText" placeholder="Scrivi qui il tuo testo..."></textarea>
+                    </div>
+                    <div class="inputDiv maxWidth">
+                        <p class="privacyText">
+                            Acconsento al trattamento dei dati personali:
+                        </p>
+                        <label for="privacyYes">SI</label>
+                        <input type="radio" id="privacyYes" name="privacy" value="si" required>
+                        
+                        <label for="privacyNo">NO</label>
+                        <input type="radio" id="privacyNo" name="privacy" value="no" checked>
+                    </div>
+                    <div class="inputDiv maxWidth">
+                        <input type="submit" name="submit" id="submitForm" class="button" value="Invia il form">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Landing page Bakery - Created by <a href="https://www.linkedin.com/in/davide-missiato-a58125223/" target="_blank">Davide Missiato</a> (2021)
+            </p>
+        </footer>
+    </body>
+</html>
